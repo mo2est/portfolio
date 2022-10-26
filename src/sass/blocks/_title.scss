@@ -1,0 +1,20 @@
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    &_fz16px {
+        display: block;
+        margin-left: 10px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+    &_fz48px {
+        margin-top: 9px;
+        width: 532px;
+        font-size: 48px;
+        line-height: 60px;
+        color: #FFFCFC;
+    }
+}
