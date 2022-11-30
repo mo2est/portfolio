@@ -1,37 +1,64 @@
 .promo {
-    position: relative;
     min-height: 100vh;
-    background: url('../../img/main_bg.jpg') center 50%/cover no-repeat;
-    padding-top: 206px;
-    z-index: 1;
-    &_subtitle {
+    position: relative;
+    padding-top: 200px;
+    background: url(../../img/main_bg.jpg) no-repeat 50%/cover;
+    &__subtitle {
         position: relative;
-        z-index: 1;
-        @include orange_circle
+        @include orange_circle;
+        padding-left: 10px;
+        z-index: 2;
     }
     &__btns {
         margin-top: 25px;
         width: 248px;
-        display: flex;
+        display: flex; 
         justify-content: space-between;
         align-items: center;
     }
     &__link {
-        display: block;
         font-weight: 700;
         font-size: 14px;
-        color: #111010;
+        line-height: 21px;
+        color: #FFFFFF;
         &:hover {
-            color: #111010; 
-            text-decoration: none;  
+            color: #ffffff;
+            text-decoration: none;
         }
-        &_white {
-            color:#ffff;
-            &:hover {
-                color: #ffff; 
-                text-decoration: none;  
-            }
-        }   
-        
     }
+    &__shedule {
+        margin-top: 135px;
+        width: 700px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__img {
+        width: 100px;
+        align-items: center;
+    }
+    &__text {
+        margin-top: 15px;
+        color: #ffffff;
+        text-align: center;
+        font-size: 20px;
+        .first {
+            color: yellow;
+        }
+        .second {
+            color: green;
+        }
+        .third {
+            color: blue;
+        }
+        .four {
+            color: red;
+        }
+    }
+
 }

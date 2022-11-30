@@ -1,31 +1,31 @@
 .sidepanel {
-    &-block {
-        position: fixed;
-        z-index: 2;
-        top: 226px;
-        left: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        height: 338px;
-        &__divider {
-            height: 70px;
-            width: 2px;
-            background-color: #fff;
-        }
-        &__text {
-            color:#fff;
-            height: 150px;
-            width: 25px;
-            font-weight: 700;
-            font-size: 16px;
-            margin-top: 10px;
-            span {
-                display: block;
-                width: 150px;
-                transform: rotate(-90deg) translate(-30%, -260%);
-            }
+    position: fixed;
+    top: 230px;
+    left: 50px;
+    z-index: 2;
+    height: 338px;
+    width: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &__divider {
+        height: 70px;
+        width: 2px;
+        background-color: #fff;
+    }
+    &__text {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #F2EFEF;
+        height: 148px;
+        width: 24px;
+        span {
+            display: block;
+            height: 24px;
+            width: 148px;
+            transform: rotate(-90deg) translate(-40%,-260%);
         }
     }
 }
