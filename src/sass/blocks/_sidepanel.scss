@@ -9,6 +9,12 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    &__link svg {
+        &:hover {
+            width: 29px;
+            height: 30px;
+        }
+    }
     &__divider {
         height: 70px;
         width: 2px;
