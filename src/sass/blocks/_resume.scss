@@ -1,0 +1,88 @@
+.resume {
+    padding-top: 120px;
+    background: #9E9E9E;
+    &__column {
+        ul {
+            list-style-type: none;
+            li {
+                position: relative;
+                &:after {
+                    position: absolute;
+                    top: -8px;
+                    left: -9px;
+                    content: '';
+                    width: 1px;
+                    height: calc(100% + 8px);
+                    background-color: black;
+                    
+                } 
+            }
+        }
+    }
+    &_subtitle {
+        position: relative;
+        text-align: center;
+        @include orange_circle;
+        &:before {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        z-index: 2;
+    }
+    &_title {
+        text-align: center;
+        margin-top: 6px;
+    }
+
+    &__wrapper {
+        padding: 60px 98px 0 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 136px;
+    }
+    &__item-title {
+        padding-left: 35px;
+        position: relative;
+        @include orange_circle;
+        &:before {
+            position: absolute;
+            left: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 15px;
+            width: 15px;
+        }
+        z-index: 2;
+    }
+    &__item-head {
+        position: relative;
+        padding: 45px 0 0 100px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 65px;
+            left: -8px;
+            width: 42px;
+            height: 1px;
+            background-color: #000;
+        }
+        
+    }
+    &__item-icon {
+        position: absolute;
+        top: 52px;
+        left: 36px;
+        @include orange_circle;
+        z-index: 2;
+        img {
+            position: absolute;
+            top: 11px;
+            left: 17px;
+        }
+    }
+    &__item-body {
+        padding: 12px 0 0 35px;
+
+    }
+}
