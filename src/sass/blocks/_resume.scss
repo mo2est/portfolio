@@ -19,22 +19,7 @@
             }
         }
     }
-    &_subtitle {
-        position: relative;
-        text-align: center;
-        @include orange_circle;
-        &:before {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        z-index: 2;
-    }
-    &_title {
-        text-align: center;
-        margin-top: 6px;
-    }
-
+    
     &__wrapper {
         padding: 60px 98px 0 65px;
         display: grid;

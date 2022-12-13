@@ -26,6 +26,22 @@
         
 }
 
+.subtitle-block {
+    position: relative;
+    text-align: center;
+    @include orange_circle;
+    &:before {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    z-index: 2;
+}
+.title-block {
+    text-align: center;
+    margin-top: 6px;
+}
+
 
 @import 'blocks/promo';
 @import 'blocks/title';
@@ -35,6 +51,8 @@
 @import 'blocks/about';
 @import 'blocks/resume';
 @import 'blocks/skills';
+@import 'blocks/portfolio';
+@import 'blocks/price';
 
 
 

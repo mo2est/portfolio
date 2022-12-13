@@ -1,28 +1,13 @@
 .skills {
     padding-top: 126px;
     background:#9E9E9E;
-    &_subtitle {
-        position: relative;
-        text-align: center;
-        @include orange_circle;
-        &:before {
-            position: absolute;
-            top: 1;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        z-index: 2;
-    }
-    &_title {
-        text-align: center;
-        margin-top: 6px;
-    }
     &__wrapper {
         margin-top: 60px;
         display: grid;
         grid-template-columns: repeat(4, 270px);
         grid-template-rows: repeat(2, minmax(270px, auto));
         gap: 13px;
+        grid-auto-rows: 270px;
     }
     &__item {
         border: 1px solid black;
@@ -60,6 +45,7 @@
         grid-template-rows: repeat(2, 70px);
         column-gap: 45px;
         row-gap: 30px;
+        grid-auto-rows: 70px;
     }
     &-rating__header {
         display: flex;
