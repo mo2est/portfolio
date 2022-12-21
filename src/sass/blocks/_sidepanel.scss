@@ -9,10 +9,10 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    
     &__link svg {
         &:hover {
-            width: 29px;
-            height: 30px;
+            transform: scale(1.35);
         }
     }
     &__divider {
